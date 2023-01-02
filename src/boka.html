@@ -1,0 +1,158 @@
+<!--Christine Johanson chjo2104  Miun Webbutveckling III - Projektuppgift 2022-->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka bord - En halvfull bägare</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <!-- menu -->
+                <div class="menubar">
+                    <!--imagelogo-->
+                    <div class="imagelogo">
+                        <a href="index.html">
+                            <img src="images/logotype.png" alt="halvfullbägarelogo"></a>
+                    </div>
+                    <div class="themenu">
+                        <a href="index.html">Hem</a>
+                        <a href="menu.html">Meny</a>
+                        <a href="boka.html" class="is-active">Boka bord</a>
+                        <a href="about.html">Om oss</a>
+
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="theFunction()">
+                        <button class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- hamburger menu-->
+        <nav id="small_nav">
+            <a href="index.html">Hem</a>
+            <a href="menu.html">Meny</a>
+            <a href="boka.html">Boka bord</a>
+            <a href="about.html">Om oss</a>
+        </nav>
+
+        <section class="fourthone">
+            <div class="bildandtext"><a href="boka.html">
+                    <img src="images/hitesh-dewasi-5JwBbnyZzfc_600400.jpg" alt="reserveratbord" style="width:80%;">
+                    <div class="centertext">BOKA BORD</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="secondone">
+            <!--för att skriva ut meddelande-->
+            <span id="message"></span>
+            <!--for att skriva ut meddelande i en lista-->
+            <ul id="meddelandeLista">
+
+            </ul>
+            <!-- formulär för att göra bokning-->
+            <form id="bookingForm">
+                <h2>Fyll i uppgifterna nedan för att boka bord hos oss.</h2>
+                <p>Bekräftelse skickas via mail. </p>
+                <p>Vi har öppet 17-02 alla dagar, året om.</p>
+                <p>Kökets öppettider 17-23. Välkomna!</p>
+                <label for="bookingname">Namn:</label><br>
+                <input type="text" name="name" id="bookingname">
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="date">Datum:</label><br>
+                <input type="date" name="date" id="date">
+                <br>
+                <label for="time">Tid:</label><br>
+                <input type="time" name="time" id="time">
+                <br>
+                <label for="persons">Antal personer:</label><br>
+                <input type="number" name="persons" id="persons">
+                <br>
+                <input type="submit" value="Boka" id="submit">
+            </form>
+        </section>
+
+        <section class="thirdone">
+            <h2>MENY</h2>
+            <p>Huvudrätter</p>
+            <table class="foodTable">
+
+                <thead>
+                    <tr>
+                        <th>Vad?</th>
+                        <th>Beskrivning</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody id="courseList2">
+                </tbody>
+            </table>
+
+            <p>Efterrätter</p>
+            <table class="foodTable">
+                <thead>
+                    <tr>
+                        <th>Vad?</th>
+                        <th>Beskrivning</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody id="courseList3">
+                </tbody>
+            </table>
+
+            <p>Dryck</p>
+            <table class="foodTable">
+                <thead>
+                    <tr>
+                        <th>Vad?</th>
+                        <th>Beskrivning</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody id="courseList4">
+                </tbody>
+            </table>
+
+        </section>
+
+
+    </div>
+    <footer>
+        <div class="footerbox"></div>
+        <div class="ikonbox">
+            <i class="fi fi-brands-instagram"></i>
+            <i class="fi fi-brands-facebook"></i>
+        </div>
+        <P>RESTAURANG EN HALVFULL BÄGARE</P>
+        <P>Skönsbergsvägen 23</P>
+        <P>83351 Sundsvall</P>
+        <P>060-611111</P><br>
+        <p class="fottertextibotten">
+            Projektuppgift i kursen Webbutveckling III. Christine Johanson chjo2104, 2022.
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

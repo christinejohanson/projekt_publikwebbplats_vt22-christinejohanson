@@ -1,0 +1,100 @@
+<!--Christine Johanson chjo2104  Miun Webbutveckling III - Projektuppgift 2022-->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om oss - En halvfull bägare</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <!-- menu -->
+                <div class="menubar">
+                    <!--imagelogo-->
+                    <div class="imagelogo">
+                        <a href="index.html">
+                            <img src="images/logotype.png" alt="halvfullbägarelogo"></a>
+                    </div>
+                    <div class="themenu">
+                        <a href="index.html">Hem</a>
+                        <a href="menu.html">Meny</a>
+                        <a href="boka.html">Boka bord</a>
+                        <a href="about.html" class="is-active">Om oss</a>
+
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="theFunction()">
+                        <button class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- hamburger menu-->
+        <nav id="small_nav">
+            <a href="index.html">Hem</a>
+            <a href="menu.html">Meny</a>
+            <a href="boka.html">Boka bord</a>
+            <a href="about.html">Om oss</a>
+        </nav>
+        <!-- first section pic and text-->
+        <section class="firstone">
+            <div class="bildandtext">
+                <img src="images/alex-haney_600400.jpg" alt="hamburgareochpommes" style="width:100%;">
+                <div class="centertext">EN HALVFULL BÄGARE</div>
+            </div>
+        </section>
+        <!-- second section. info about company-->
+        <section class="secondone">
+            <div class="restaurangruta">
+                <h2>RESTAURANG EN HALVFULL BÄGARE</h2>
+                <p>Vår restaurang har funnits sedan 1985 när systrarna Gertrud och Gun slog upp portarna för första gången.  
+                    Vår ambition är att alltid erbjuda god mat och dryck i en härlig stämning. Hos oss ska alla känna sig välkomna! 
+                    Menyn vi erbjuder är helt och hållets kockens egna val och favoriter och vi hoppas att det faller dig i smaken. 
+                    Vi följer inga kortlivade flugor utan vi anser att riktig mat är något man känner igen och blir ordentligt mätt av.  
+                </p>
+                <p>Vi erbjuder också några tv-skärmar som visar aktuella matcher för de som vill titta på sport, men även biljardbord 
+                    och flipperspel för de som själva vill utöva sportandet.  
+                    Hos oss tar du dig lättast med 4ans buss mot Skönsberg och kliver av vid OKQ8-macken 
+                    och följer sedan Skönsbergsvägen norrut. Vi har en generös cykelparkering utanför också 
+                    om du hellre föredrar att cykla. Om du inte alls har möjlighet att ta dig till oss, så får 
+                    maten komma till dig! Ring oss så ordnar vi med utkörning.  
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- footer-->
+    <footer>
+        <div class="footerbox"></div>
+        <div class="ikonbox">
+            <i class="fi fi-brands-instagram"></i>
+            <i class="fi fi-brands-facebook"></i>
+        </div>
+        <P>RESTAURANG EN HALVFULL BÄGARE</P>
+        <P>Skönsbergsvägen 23</P>
+        <P>83351 Sundsvall</P>
+        <P>060-611111</P><br>
+        <p class="fottertextibotten">
+            Projektuppgift i kursen Webbutveckling III. Christine Johanson chjo2104, 2022.
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

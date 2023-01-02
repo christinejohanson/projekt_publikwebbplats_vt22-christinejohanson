@@ -1,0 +1,88 @@
+//Christine Johanson chjo2104  Miun Webbutveckling III - Projektuppgift 2022
+//component- anything reusable, buttons, navbar
+h1 {
+    font-family: $mainfont;
+}
+
+p {
+    font-family: $subfont; 
+}
+
+h2 {
+    font-family: $smalltext;
+}
+
+#message {
+    font-family: $mainfont;
+    color: $beige;
+}
+
+//tabelltestning
+.foodTable {
+    margin: 0 auto;
+    font-family: $mainfont;
+    border-collapse: collapse;
+    width: 80%;
+}
+.foodTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: $red;
+    color: white;
+}
+
+.foodTable td, .foodTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  table {
+      border-collapse: collapse;
+  }
+
+  #bookingForm {
+      font-family: $smalltext;
+      p {
+          font-family: $smalltext;
+      }
+  }
+
+
+  //text och bild
+  .bildandtext {
+      position: relative;
+      text-align: center;
+      color: $black;
+      font-family: $mainfont;
+      font-size: 5em;
+  }
+  .centertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #huvudsida {
+      display: flex;
+      justify-content: center;
+
+      a {
+          color: $black;
+      }
+      a:hover {
+          color: $red;
+      }
+  }
+
+  .restaurangruta {
+      margin: 0 auto;
+      text-align: center;
+      padding: 2%;
+      color: $beige;
+      p {
+          font-family: $smalltext;
+          font-size: 0.8em;
+      }
+  }

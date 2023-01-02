@@ -1,0 +1,152 @@
+<!--Christine Johanson chjo2104  Miun Webbutveckling III - Projektuppgift 2022-->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En halvfull bägare</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="container">
+        <header>
+            <nav>
+                <!-- menu -->
+                <div class="menubar">
+                    <!--imagelogo-->
+                    <div class="imagelogo">
+                        <a href="index.html">
+                            <img src="images/logotype.png" alt="halvfullbägarelogo"></a>
+                    </div>
+                    <!-- menu -->
+                    <div class="themenu">
+                        <a href="index.html" class="is-active">Hem</a>
+                        <a href="menu.html">Meny</a>
+                        <a href="boka.html">Boka bord</a>
+                        <a href="about.html">Om oss</a>
+
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="theFunction()">
+                        <button class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- hamburger menu-->
+        <nav id="small_nav">
+            <a href="index.html" class="is-active">Hem</a>
+            <a href="menu.html">Meny</a>
+            <a href="boka.html">Boka bord</a>
+            <a href="about.html">Om oss</a>
+        </nav>
+        <!-- first section-->
+        <section class="firstone">
+            <div id="huvudsida">
+                <div class="bildandtext"><a href="boka.html">
+                        <img src="images/hitesh-dewasi-5JwBbnyZzfc_600400.jpg" alt="reserveratbord" style="width:80%;">
+                        <div class="centertext">BOKA BORD</div>
+                    </a>
+                </div>
+
+                <div class="bildandtext"><a href="menu.html">
+                        <img src="images/mike-PxJ9zkM2wdA_600400.jpg" alt="hamburgareochpommes" style="width:80%;">
+                        <div class="centertext">VÅR MENY</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- second section -->
+        <section class="secondone">
+            <div class="restaurangruta">
+                <h2>RESTAURANG EN HALVFULL BÄGARE</h2>
+                <p>Hos oss på restaurang Halvfull Bägare ska alla känna sig välkomna! Oavsett om det är en första dejt,
+                    en
+                    afterwork, en lyxig middag
+                    eller bara en söndagsburgare vill vi att du ska komma till oss! Vi fokuserar på god mat i en
+                    gemytlig
+                    miljö utan några krusiduller.
+                </p>
+            </div>
+        </section>
+        <!-- third section -->
+        <section class="thirdone">
+            <h2>MENY</h2>
+            <p>Huvudrätter</p>
+            <table class="foodTable">
+
+                <thead>
+                    <tr>
+                        <th>Vad?</th>
+                        <th>Beskrivning</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody id="courseList2">
+                </tbody>
+            </table>
+
+            <p>Efterrätter</p>
+            <table class="foodTable">
+                <thead>
+                    <tr>
+                        <th>Vad?</th>
+                        <th>Beskrivning</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody id="courseList3">
+                </tbody>
+            </table>
+
+            <p>Dryck</p>
+            <table class="foodTable">
+                <thead>
+                    <tr>
+                        <th>Vad?</th>
+                        <th>Beskrivning</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody id="courseList4">
+                </tbody>
+            </table>
+
+        </section>
+        <!-- fourth section map-->
+        <section class="fifthone">
+            <img src="images/karta_800.png" alt="kartaöversundsvall" style="width:100%;">
+        </section>
+    </div>
+    <!-- footer-->
+    <footer>
+        <div class="footerbox"></div>
+        <div class="ikonbox">
+            <i class="fi fi-brands-instagram"></i>
+            <i class="fi fi-brands-facebook"></i>
+        </div>
+        <P>RESTAURANG EN HALVFULL BÄGARE</P>
+        <P>Skönsbergsvägen 23</P>
+        <P>83351 Sundsvall</P>
+        <P>060-611111</P><br>
+        <p class="fottertextibotten">
+            Projektuppgift i kursen Webbutveckling III. Christine Johanson chjo2104, 2022.
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
